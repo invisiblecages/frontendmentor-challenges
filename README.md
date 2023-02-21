@@ -10,7 +10,7 @@
 - [Solution URL](https://github.com/invisiblecages/frontendmentor-challenges/tree/main/product-preview-card-component)
 - [Live Site URL](https://invisiblecages.github.io/frontendmentor-challenges/product-preview-card-component/)
 
-## Challenge 3
+## Interactive rating component solution
 
-- [Solution URL](https://github.com/invisiblecages/frontendmentor-challenges/)
-- [Live Site URL](https://invisiblecages.github.io/frontendmentor-challenges/)
+- [Solution URL](https://github.com/invisiblecages/frontendmentor-challenges/tree/main/interactive-rating-component)
+- [Live Site URL](https://invisiblecages.github.io/frontendmentor-challenges/interactive-rating-component/)
