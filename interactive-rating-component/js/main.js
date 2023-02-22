@@ -6,15 +6,16 @@ rateButtons.forEach((button) => {
   button.addEventListener("click", () => {
     console.log(button.textContent);
     rating = button.textContent;
+    submitButton.disabled = false;
   });
 });
 
 submitButton.addEventListener("click", (e) => {
-  submitButton.disabled = false;
+  e.preventDefault();
   if (rating === undefined) {
-    e.preventDefault();
     submitButton.disabled = true;
   } else {
     console.log("Rated: " + rating);
+    window.location.href = `thank-you.html?rating=${rating}`;
   }
 });

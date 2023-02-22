@@ -7,6 +7,10 @@
   --color-neutral-dark-blue: hsl(213, 19%, 18%);
   --color-neutral-very-dark-blue: hsl(216, 12%, 8%);
 
+  --color-body-background: #141519;
+  --color-card-background: #212832;
+  --color-ratebutton-background: #262f38;
+
   --font-family-primary: "Overpass", sans-serif;
 
   --font-weight-regular: 400;
@@ -24,7 +28,7 @@ body {
 }
 
 .rating {
-  background-color: var(--color-neutral-dark-blue);
+  background-color: var(--color-card-background);
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -32,14 +36,14 @@ body {
   border-radius: 1rem;
   margin: 1rem;
   padding: 2rem;
-  max-width: 350px;
-  min-height: 350px;
+  max-width: 325px;
+  min-height: 360px;
 }
 
 .rating__star {
-  background-color: var(--color-neutral-medium-grey);
-  height: 2rem;
-  width: 2rem;
+  background-color: var(--color-neutral-dark-blue);
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
   border: none;
   display: flex;
@@ -71,7 +75,7 @@ body {
 }
 
 .rating__rate-buttons button {
-  background-color: var(--color-neutral-medium-grey);
+  background-color: var(--color-neutral-dark-blue);
   color: var(--color-neutral-light-grey);
   height: 2.5rem;
   width: 2.5rem;
@@ -115,4 +119,13 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Thank You Page */
+.rating__text .user-rating-text {
+  color: var(--color-primary-orange);
+  background-color: var(--color-neutral-dark-blue);
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  width: fit-content;
 }
