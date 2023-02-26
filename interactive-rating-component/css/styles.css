@@ -37,27 +37,26 @@ body {
   margin: 1rem;
   padding: 2rem;
   max-width: 325px;
-  min-height: 360px;
+  max-height: 360px;
 }
 
 .rating__star {
-  background-color: var(--color-neutral-dark-blue);
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 1rem;
 }
 
 .rating__star img {
-  scale: 0.75;
+  background-color: var(--color-neutral-dark-blue);
+  border-radius: 50%;
+  padding: 0.75rem;
+}
+
+.rating__text {
+  margin-bottom: 0.5rem;
 }
 
 .rating__text h1 {
   color: var(--color-neutral-white);
+  font-size: 1.5rem;
 }
 
 .rating__text p {
@@ -69,7 +68,6 @@ body {
 
 .rating__rate-buttons {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
@@ -85,7 +83,7 @@ body {
 }
 
 .rating__rate-buttons button:hover {
-  background-color: var(--color-primary-orange);
+  background-color: var(--color-neutral-medium-grey);
   color: var(--color-neutral-white);
   cursor: pointer;
 }
@@ -98,6 +96,8 @@ body {
 .rating__submit {
   background-color: var(--color-primary-orange);
   color: var(--color-neutral-white);
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   border: none;
@@ -122,10 +122,15 @@ body {
 }
 
 /* Thank You Page */
+.rating__thank-you {
+  align-items: center;
+  text-align: center;
+}
+
 .rating__text .user-rating-text {
   color: var(--color-primary-orange);
   background-color: var(--color-neutral-dark-blue);
   border-radius: 2rem;
   padding: 0.3rem 1rem;
-  width: fit-content;
+  display: inline-block;
 }

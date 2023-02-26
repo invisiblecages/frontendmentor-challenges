@@ -19,3 +19,10 @@ submitButton.addEventListener("click", (e) => {
     window.location.href = `thank-you.html?rating=${rating}`;
   }
 });
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".rating__rate-buttons") && rating !== undefined) {
+    rating = undefined;
+    submitButton.disabled = true;
+  }
+});
